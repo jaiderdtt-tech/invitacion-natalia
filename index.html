@@ -289,14 +289,27 @@ input[type=text]:focus{outline:none;border-color:var(--vino);box-shadow:0 0 0 3p
 }
 
 @media (max-width:380px){
-  .titulo-portada .nombre{font-size:70px}
-  .poster .rotulo .n{font-size:70px}
   .cartel h2{font-size:44px}
   .cuenta b{font-size:26px}
   .marquesina strong{font-size:26px}
 }
 @media (min-width:700px){.trofeo{height:40%}.cortina{width:15%}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* ---- Nombre NATALIA: mayúsculas, dorado, letras parejas ---- */
+.titulo-portada .nombre,.poster .rotulo .n,.sobre .carta b,.claqueta strong.firma,.creditos .linea1 b{
+  font-family:var(--f-titulo);font-weight:700;text-transform:uppercase;font-variant:normal;letter-spacing:.1em;padding-left:.1em;line-height:1.1}
+.titulo-portada .nombre{font-size:54px;padding-right:0}
+.poster .rotulo .n{font-size:48px;padding-right:0;margin:2px 0 6px}
+.titulo-portada .xv{font-size:26px;text-transform:uppercase}
+.titulo-portada .est{right:-40px;top:-22px}
+.poster .rotulo .xv{font-size:22px;text-transform:uppercase}
+.sobre .carta b{font-size:24px;background:linear-gradient(180deg,#c9a050,#8a6227 50%,#b88d3f);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;margin-top:4px}
+.sobre .carta i{color:#a07a35}
+.claqueta strong.firma{font-size:26px;margin-top:2px}
+.creditos .linea1 b{font-size:17px;color:var(--oro-claro)}
+.oro-plano{color:var(--oro-claro)}
+@media (max-width:380px){.titulo-portada .nombre{font-size:46px}.poster .rotulo .n{font-size:42px}}
 </style>
 </head>
 <body>
@@ -355,14 +368,14 @@ input[type=text]:focus{outline:none;border-color:var(--vino);box-shadow:0 0 0 3p
 <!-- Portada -->
 <section class="portada" id="portada">
   <h1 class="titulo-portada">
-    <span class="nombre oro">Natalia</span>
+    <span class="nombre oro">NATALIA</span>
     <span class="xv oro">XV Años</span>
     <svg class="est" aria-hidden="true"><use href="#star"/></svg>
   </h1>
   <span class="toca oro">Toca para abrir</span>
   <button class="sobre" id="sobre" type="button" aria-label="Abrir la invitación">
     <span class="fondo"></span>
-    <span class="carta"><i>XV</i><b>Natalia</b></span>
+    <span class="carta"><i>XV</i><b>NATALIA</b></span>
     <span class="bolsillo"></span>
     <svg class="filigrana" viewBox="0 0 300 200" preserveAspectRatio="none" aria-hidden="true" style="color:#8a6227">
       <use href="#esq" x="6" y="194" width="70" height="70" transform="scale(1,-1) translate(0,-388)"/>
@@ -408,7 +421,7 @@ input[type=text]:focus{outline:none;border-color:var(--vino);box-shadow:0 0 0 3p
         <span class="velo-b"></span>
         <figcaption class="rotulo">
           <span class="eyebrow">Mis</span>
-          <span class="n oro">Natalia</span>
+          <span class="n oro">NATALIA</span>
           <span class="xv oro">XV Años</span>
           <span class="lema">Una noche de estrellas</span>
         </figcaption>
@@ -417,7 +430,7 @@ input[type=text]:focus{outline:none;border-color:var(--vino);box-shadow:0 0 0 3p
     </figure>
 
     <div class="creditos">
-      <p class="linea1">Una producción de la familia &nbsp;·&nbsp; protagonizada por <b>Natalia</b></p>
+      <p class="linea1">Una producción de la familia &nbsp;·&nbsp; protagonizada por <b class="oro-plano">NATALIA</b></p>
       <p class="linea2">Vestuario rojo de gala · alfombra roja · música · baile · lluvia de sobres · Balneario Mar y Cielo · Santander de Quilichao</p>
       <p class="estreno">15 · 11 · 2026</p>
     </div>
@@ -455,7 +468,7 @@ input[type=text]:focus{outline:none;border-color:var(--vino);box-shadow:0 0 0 3p
           <div class="celda"><small>Fecha</small><strong>Dom 15 nov</strong><span class="sub">2026</span></div>
           <div class="celda"><small>Hora</small><strong>7:00 p.m.</strong></div>
           <div class="celda ancha"><small>Locación</small><strong>Balneario Mar y Cielo</strong><span class="sub">Santander de Quilichao, Cauca</span></div>
-          <div class="celda ancha"><small>Protagonista</small><strong class="firma">Natalia</strong></div>
+          <div class="celda ancha"><small>Protagonista</small><strong class="firma oro">NATALIA</strong></div>
         </div>
       </div>
       <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Balneario%20Mar%20y%20Cielo%2C%20Santander%20de%20Quilichao%2C%20Cauca" target="_blank" rel="noopener">
